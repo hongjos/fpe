@@ -88,7 +88,7 @@ class ModelSubmission(ModelBase):
             wt += 0.2 ;
         if (USE_MODEL_NN):
             yp = yp + self.modelNN.predict( enx ) * 0.6
-            wt += 0.1
+            wt += 0.6
         ypred = yp / wt ;
         return ypred;
 
